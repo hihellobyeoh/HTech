@@ -17,4 +17,4 @@ README.txt
 .project
 .settings/*
 .classpath
-*.vsdx
+*vsdx
