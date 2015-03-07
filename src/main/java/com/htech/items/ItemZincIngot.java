@@ -6,10 +6,10 @@ import com.htech.main.HTBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ZincIngot extends Item {
+public class ItemZincIngot extends Item {
 	
 	private final String name = "zincingot";
-	public ZincIngot(){
+	public ItemZincIngot(){
 		GameRegistry.registerItem(this, name);
 		setUnlocalizedName(RefStrings.MODID + "_" + name);
 		setCreativeTab(HTBase.tabHtech);
