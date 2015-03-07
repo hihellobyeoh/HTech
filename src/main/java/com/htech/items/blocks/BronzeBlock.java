@@ -7,9 +7,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ZincBlock extends Block {
-	private final String name = "zincblock";
-	public ZincBlock(){
+public class BronzeBlock extends Block {
+	private final String name = "bronzeblock";
+	public BronzeBlock(){
 		super(Material.iron);
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(RefStrings.MODID + "_" + name);

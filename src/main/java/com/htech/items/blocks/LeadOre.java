@@ -14,6 +14,10 @@ public class LeadOre extends Block {
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(RefStrings.MODID + "_" + name);
 		setCreativeTab(HTBase.tabHtech);
+		setHardness(3.0F);
+		setHarvestLevel("pickaxe", 1);
+		setStepSound(soundTypePiston);
+		setResistance(15.0F);
 	}
 	
 	public String getName(){

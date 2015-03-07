@@ -14,6 +14,10 @@ public class TinBlock extends Block {
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(RefStrings.MODID + "_" + name);
 		setCreativeTab(HTBase.tabHtech);
+		setHardness(4.0F);
+		setHarvestLevel("pickaxe", 1);
+		setStepSound(soundTypeMetal);
+		setResistance(30.0F);
 	}
 	
 	public String getName(){
