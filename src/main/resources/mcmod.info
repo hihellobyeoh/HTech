@@ -1,0 +1,16 @@
+[
+{
+  "modid": "htech",
+  "name": "H-Tech",
+  "description": "W.I.P. Mod",
+  "version": "0.1",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Hihellobyeoh"],
+  "credits": "Everyone who makes Tutorials for modding in forge.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
