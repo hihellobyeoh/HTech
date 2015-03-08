@@ -77,23 +77,24 @@ public class HTBase
     static ToolMaterial hTBronzeToolMaterial = EnumHelper.addToolMaterial("htbronzetoolmaterial", 2, 180, 5.0F, 1.5F, 17);
     static ArmorMaterial hTBronzeArmorMaterial = EnumHelper.addArmorMaterial("htbronzearmormaterial", null, 10, new int[]{2, 5, 4, 2}, 12);
     
+    //blocks
+    public static Block copperOre = new CopperOre();
+    public static Block tinOre = new TinOre();
+    public static Block leadOre = new LeadOre();
+    public static Block zincOre = new ZincOre();
+    
+    public static Block copperBlock = new CopperBlock();
+    public static Block tinBlock = new TinBlock();
+    public static Block leadBlock = new LeadBlock();
+    public static Block zincBlock = new ZincBlock();
+    public static Block bronzeBlock = new BronzeBlock();
+    
     //items
     public static Item copperIngot = new ItemCopperIngot();
     public static Item tinIngot = new ItemTinIngot();
     public static Item zincIngot = new ItemZincIngot();
     public static Item leadIngot = new ItemLeadIngot();
     public static Item bronzeIngot = new ItemBronzeIngot();
-    
-    //blocks
-    public static Block copperBlock = new CopperBlock();
-    public static Block copperOre = new CopperOre();
-    public static Block tinBlock = new TinBlock();
-    public static Block bronzeBlock = new BronzeBlock();
-    public static Block tinOre = new TinOre();
-    public static Block zincBlock = new ZincBlock();
-    public static Block zincOre = new ZincOre();
-    public static Block leadBlock = new LeadBlock();
-    public static Block leadOre = new LeadOre();
     
     //tools
     public static Item bronzeSword = new ToolBronzeSword(hTBronzeToolMaterial);
@@ -141,6 +142,7 @@ public class HTBase
     	renderItem.getItemModelMesher().register(Item.getItemFromBlock(leadOre), 0, new ModelResourceLocation(RefStrings.MODID + ":" + ((LeadOre) leadOre).getName(), "inventory"));
     	renderItem.getItemModelMesher().register(Item.getItemFromBlock(zincBlock), 0, new ModelResourceLocation(RefStrings.MODID + ":" + ((ZincBlock) zincBlock).getName(), "inventory"));
     	renderItem.getItemModelMesher().register(Item.getItemFromBlock(zincOre), 0, new ModelResourceLocation(RefStrings.MODID + ":" + ((ZincOre) zincOre).getName(), "inventory"));
+    	renderItem.getItemModelMesher().register(Item.getItemFromBlock(bronzeBlock), 0, new ModelResourceLocation(RefStrings.MODID + ":" + ((BronzeBlock) bronzeBlock).getName(), "inventory"));
 
     }
     

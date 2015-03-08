@@ -12,6 +12,12 @@ item.htech_bronzespade.name=Bronze Shovel
 item.htech_bronzeaxe.name=Bronze Axe
 item.htech_bronzehoe.name=Bronze Hoe
 
+item.htech_bronzehelmet.name=Bronze Helmet
+item.htech_bronzechestplate.name=Bronze Chestplate
+item.htech_bronzeleggings.name=Bronze Leggings
+item.htech_bronzeboots.name=Bronze Boots
+
+tile.htech_bronzeblock.name=Bronze Block
 tile.htech_copperblock.name=Copper Block
 tile.htech_copperore.name=Copper Ore
 tile.htech_tinblock.name=Tin Block
