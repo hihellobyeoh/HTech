@@ -19,7 +19,7 @@ public class BronzeArmor extends ItemArmor {
 		
 	}
 		
-	@Override
+	/*@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
 	{
 		if(stack.getItem() == HTBase.bronzeHelmet)
@@ -39,5 +39,5 @@ public class BronzeArmor extends ItemArmor {
 			System.out.println(stack.getItem() + " has a missing texture.");
 			return null;
 		}
-	}
+	}*/
 }
