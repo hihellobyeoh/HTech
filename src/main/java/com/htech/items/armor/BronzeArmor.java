@@ -15,26 +15,29 @@ public class BronzeArmor extends ItemArmor {
 		GameRegistry.registerItem(this, name);
 		setUnlocalizedName(RefStrings.MODID + "_" + name);
 		setCreativeTab(HTBase.tabHtech);
+		
+		
 	}
-	
-	/*@Override
+		
+	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
 	{
 		if(stack.getItem() == HTBase.bronzeHelmet)
 		{
-			return RefStrings.MODID + ":models/armor/bronzearmor1";
+			return RefStrings.MODID + ":models/armor/bronze_layer_1";
 		}else if(stack.getItem() == HTBase.bronzeChestplate)
 		{
-			return RefStrings.MODID + ":models/armor/bronzearmor1";
+			return RefStrings.MODID + ":models/armor/bronze_layer_1";
 		}else if(stack.getItem() == HTBase.bronzeBoots)
 		{
-			return RefStrings.MODID + ":models/armor/bronzearmor1";
-		}else if(stack.getItem() == HTBase.bronzeLeggings) {
-			return RefStrings.MODID + ":models/armor/bronzearmor2";
+			return RefStrings.MODID + ":models/armor/bronze_layer_1";
+		}else if(stack.getItem() == HTBase.bronzeLeggings)
+		{
+			return RefStrings.MODID + ":models/armor/bronze_layer_2";
 		}
 		else{
 			System.out.println(stack.getItem() + " has a missing texture.");
 			return null;
 		}
-	}*/
+	}
 }
