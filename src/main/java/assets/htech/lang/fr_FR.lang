@@ -1,0 +1,28 @@
+itemGroup.tabHtech=H-Tech
+
+item.htech_copperingot.name=Lingot de cuivre
+item.htech_tiningot.name=Lingot d'étain
+item.htech_leadingot.name=Lingot de plomb
+item.htech_zincingot.name=Lingot de zinc
+item.htech_bronzeingot.name=lingot de bronze
+
+item.htech_bronzesword.name=Épée de bronze
+item.htech_bronzepickaxe.name=Pioche de bronze
+item.htech_bronzespade.name=Pelle de bronze
+item.htech_bronzeaxe.name=Hache de bronze
+item.htech_bronzehoe.name=Houe de bronze
+
+item.htech_bronzehelmet.name=Casque de bronze
+item.htech_bronzechestplate.name=Plastron de bronze
+item.htech_bronzeleggings.name=Jambières de bronze
+item.htech_bronzeboots.name=Bottes de bronze
+
+tile.htech_bronzeblock.name=Bloc de bronze
+tile.htech_copperblock.name=Bloc de cuivre
+tile.htech_copperore.name=Minerai de cuivre
+tile.htech_tinblock.name=Bloc d'étain
+tile.htech_tinore.name=Minerai d'étain
+tile.htech_leadblock.name=Bloc de plomb
+tile.htech_leadore.name=Minerai de plomb
+tile.htech_zincblock.name=Bloc de zinc
+tile.htech_zincore.name=Minerai de zinc
