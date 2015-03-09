@@ -75,7 +75,7 @@ public class HTBase
     
     //materials
     static ToolMaterial hTBronzeToolMaterial = EnumHelper.addToolMaterial("htbronzetoolmaterial", 2, 180, 5.0F, 1.5F, 17);
-    static ArmorMaterial hTBronzeArmorMaterial = EnumHelper.addArmorMaterial("htbronzearmormaterial", null, 10, new int[]{2, 5, 4, 2}, 12);
+    /*static ArmorMaterial hTBronzeArmorMaterial = EnumHelper.addArmorMaterial("htbronzearmormaterial", null, 10, new int[]{2, 5, 4, 2}, 12);*/
     
     //blocks
     public static Block copperOre = new CopperOre();
@@ -104,10 +104,10 @@ public class HTBase
     public static Item bronzeHoe = new ToolBronzeHoe(hTBronzeToolMaterial);
     
     //armor
-    public static Item bronzeHelmet = new BronzeArmor(hTBronzeArmorMaterial, 0, "bronzehelmet");
+   /* public static Item bronzeHelmet = new BronzeArmor(hTBronzeArmorMaterial, 0, "bronzehelmet");
     public static Item bronzeChestplate = new BronzeArmor(hTBronzeArmorMaterial, 1, "bronzechestplate");
     public static Item bronzeLeggings = new BronzeArmor(hTBronzeArmorMaterial, 2, "bronzeleggings");
-    public static Item bronzeBoots = new BronzeArmor(hTBronzeArmorMaterial, 3, "bronzeboots");
+    public static Item bronzeBoots = new BronzeArmor(hTBronzeArmorMaterial, 3, "bronzeboots");*/
     
     public static void renderItems(){
     	
@@ -128,11 +128,11 @@ public class HTBase
     	renderItem.getItemModelMesher().register(bronzeHoe, 0, new ModelResourceLocation(RefStrings.MODID + ":" + ((ToolBronzeHoe) bronzeHoe).getName(), "inventory"));
     	
     	//armor
-    	renderItem.getItemModelMesher().register(bronzeHelmet, 0, new ModelResourceLocation(RefStrings.MODID + ":" + "bronzehelmet", "inventory"));
+    	/*renderItem.getItemModelMesher().register(bronzeHelmet, 0, new ModelResourceLocation(RefStrings.MODID + ":" + "bronzehelmet", "inventory"));
     	renderItem.getItemModelMesher().register(bronzeChestplate, 0, new ModelResourceLocation(RefStrings.MODID + ":" + "bronzechestplate", "inventory"));
     	renderItem.getItemModelMesher().register(bronzeLeggings, 0, new ModelResourceLocation(RefStrings.MODID + ":" + "bronzeleggings", "inventory"));
     	renderItem.getItemModelMesher().register(bronzeBoots, 0, new ModelResourceLocation(RefStrings.MODID + ":" + "bronzeboots", "inventory"));
-    	
+    	*/
     	//blocks
     	renderItem.getItemModelMesher().register(Item.getItemFromBlock(copperBlock), 0, new ModelResourceLocation(RefStrings.MODID + ":" + ((CopperBlock) copperBlock).getName(), "inventory"));
     	renderItem.getItemModelMesher().register(Item.getItemFromBlock(copperOre), 0, new ModelResourceLocation(RefStrings.MODID + ":" + ((CopperOre) copperOre).getName(), "inventory"));
