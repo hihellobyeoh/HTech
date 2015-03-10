@@ -10,34 +10,20 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BronzeArmor extends ItemArmor {
 	
-	public BronzeArmor(ArmorMaterial material, int armorType, String name) {
-		super(material, 0, armorType);
-		GameRegistry.registerItem(this, name);
-		setUnlocalizedName(RefStrings.MODID + "_" + name);
-		setCreativeTab(HTBase.tabHtech);
-		
-		
-	}
-		
-	/*@Override
-	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
+	public BronzeArmor(ItemArmor.ArmorMaterial material, int armorType, String name)
 	{
-		if(stack.getItem() == HTBase.bronzeHelmet)
-		{
-			return RefStrings.MODID + ":models/armor/bronze_layer_1";
-		}else if(stack.getItem() == HTBase.bronzeChestplate)
-		{
-			return RefStrings.MODID + ":models/armor/bronze_layer_1";
-		}else if(stack.getItem() == HTBase.bronzeBoots)
-		{
-			return RefStrings.MODID + ":models/armor/bronze_layer_1";
-		}else if(stack.getItem() == HTBase.bronzeLeggings)
-		{
-			return RefStrings.MODID + ":models/armor/bronze_layer_2";
-		}
-		else{
-			System.out.println(stack.getItem() + " has a missing texture.");
-			return null;
-		}
-	}*/
+		
+		super(material, 0, armorType);
+		this.setCreativeTab(HTBase.tabHtech);
+		this.setUnlocalizedName(name);
+		GameRegistry.registerItem(this, name);
+	}
+
+	@Override
+	public String getArmorTexture(ItemStack armor, Entity entity, int slot, String type)
+	{
+		String textureName = String.format(RefStrings.MODID + ":textures/models/armor/%s_layer_%d%s.png",
+				this.getArmorMaterial().getName(), (slot == 2 ? 2 : 1), type == null ? "" : String.format("_%s", type));
+		return textureName;
+	}
 }
