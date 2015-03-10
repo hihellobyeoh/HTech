@@ -1,0 +1,28 @@
+itemGroup.tabHtech=H-Tech Base
+
+item.htechbase_copperingot.name=Copper Ingot
+item.htechbase_tiningot.name=Tin Ingot
+item.htechbase_leadingot.name=Lead Ingot
+item.htechbase_zincingot.name=Zinc Ingot
+item.htechbase_bronzeingot.name=Bronze Ingot
+
+item.htechbase_bronzesword.name=Bronze Sword
+item.htechbase_bronzepickaxe.name=Bronze Pickaxe
+item.htechbase_bronzespade.name=Bronze Shovel
+item.htechbase_bronzeaxe.name=Bronze Axe
+item.htechbase_bronzehoe.name=Bronze Hoe
+
+item.bronzehelmet.name=Bronze Helmet
+item.bronzechestplate.name=Bronze Chestplate
+item.bronzeleggings.name=Bronze Leggings
+item.bronzeboots.name=Bronze Boots
+
+tile.htechbase_bronzeblock.name=Bronze Block
+tile.htechbase_copperblock.name=Copper Block
+tile.htechbase_copperore.name=Copper Ore
+tile.htechbase_tinblock.name=Tin Block
+tile.htechbase_tinore.name=Tin Ore
+tile.htechbase_leadblock.name=Lead Block
+tile.htechbase_leadore.name=Lead Ore
+tile.htechbase_zincblock.name=Zinc Block
+tile.htechbase_zincore.name=Zinc Ore
