@@ -4,7 +4,7 @@ import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class Materials {
+public class BaseMaterials {
 
 	//tools
 	public static ToolMaterial BronzeTool = EnumHelper.addToolMaterial("bronzetool", 2, 180, 5.0F, 1.5F, 17);

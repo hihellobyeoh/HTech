@@ -1,4 +1,4 @@
-package com.htech.base.main;
+package com.htech.proxy;
 
 public class CommonProxy {
 

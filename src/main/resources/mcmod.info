@@ -1,7 +1,23 @@
 [
 {
-  "modid": "htech",
-  "name": "H-Tech",
+  "modid": "htechbase",
+  "name": "H-Tech Base",
+  "description": "W.I.P. Mod",
+  "version": "1.0",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Hihellobyeoh"],
+  "credits": "Everyone who makes Tutorials for modding in forge.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [
+	"mod_MinecraftForge"
+ ]
+},
+{
+  "modid": "htechmech",
+  "name": "H-Tech Mechanical",
   "description": "W.I.P. Mod",
   "version": "0.1",
   "mcversion": "1.8",
@@ -11,6 +27,9 @@
   "credits": "Everyone who makes Tutorials for modding in forge.",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "parent": "htechbase",
+  "dependencies": [
+  "mod_MinecraftForge"
+ ]
 }
 ]

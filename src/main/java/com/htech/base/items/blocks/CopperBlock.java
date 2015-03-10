@@ -1,6 +1,6 @@
 package com.htech.base.items.blocks;
 
-import com.htech.base.lib.RefStrings;
+import com.htech.base.lib.RefStringsBase;
 import com.htech.base.main.HTBase;
 
 import net.minecraft.block.Block;
@@ -13,7 +13,7 @@ public class CopperBlock extends Block {
 	public CopperBlock(){
 		super(Material.iron);
 		GameRegistry.registerBlock(this, name);
-		setUnlocalizedName(RefStrings.MODIDBASE + "_" + name);
+		setUnlocalizedName(RefStringsBase.MODIDBASE + "_" + name);
 		setCreativeTab(HTBase.tabHtech);
 		setHardness(4.0F);
 		setHarvestLevel("pickaxe", 1);

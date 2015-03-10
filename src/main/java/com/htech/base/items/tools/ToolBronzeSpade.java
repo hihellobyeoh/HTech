@@ -1,6 +1,6 @@
 package com.htech.base.items.tools;
 
-import com.htech.base.lib.RefStrings;
+import com.htech.base.lib.RefStringsBase;
 import com.htech.base.main.HTBase;
 
 import net.minecraft.item.ItemSpade;
@@ -14,7 +14,7 @@ public class ToolBronzeSpade extends ItemSpade {
 		
 		super(material);
 		GameRegistry.registerItem(this, name);
-		setUnlocalizedName(RefStrings.MODIDBASE + "_" + name);
+		setUnlocalizedName(RefStringsBase.MODIDBASE + "_" + name);
 		setCreativeTab(HTBase.tabHtech);
 	}
 	public String getName(){

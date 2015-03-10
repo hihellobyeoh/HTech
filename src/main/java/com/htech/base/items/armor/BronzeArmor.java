@@ -1,6 +1,6 @@
 package com.htech.base.items.armor;
 
-import com.htech.base.lib.RefStrings;
+import com.htech.base.lib.RefStringsBase;
 import com.htech.base.main.HTBase;
 
 import net.minecraft.entity.Entity;
@@ -22,7 +22,7 @@ public class BronzeArmor extends ItemArmor {
 	@Override
 	public String getArmorTexture(ItemStack armor, Entity entity, int slot, String type)
 	{
-		String textureName = String.format(RefStrings.MODIDBASE + ":textures/models/armor/%s_layer_%d%s.png",
+		String textureName = String.format(RefStringsBase.MODIDBASE + ":textures/models/armor/%s_layer_%d%s.png",
 				this.getArmorMaterial().getName(), (slot == 2 ? 2 : 1), type == null ? "" : String.format("_%s", type));
 		return textureName;
 	}

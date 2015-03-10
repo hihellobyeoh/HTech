@@ -1,9 +1,6 @@
-package com.htech.base.main;
+package com.htech.mech.main;
 
-import com.htech.base.crafting.HTCraftingManager;
-import com.htech.base.init.HTBlocks;
-import com.htech.base.init.HTItems;
-import com.htech.base.lib.RefStringsBase;
+import com.htech.mech.lib.RefStringsMech;
 import com.htech.proxy.CommonProxy;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -19,16 +16,17 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = RefStringsBase.MODIDBASE, name = RefStringsBase.NAMEBASE, version = RefStringsBase.VERSION)
-public class HTBase
-{
-	@Instance(RefStringsBase.MODIDBASE)
-	public static HTBase instance;
+
+@Mod(modid = RefStringsMech.MODIDMECH, name = RefStringsMech.NAMEMECH, version = RefStringsMech.VERSION)
+public class HTMech{
 	
-	@SidedProxy(clientSide=RefStringsBase.CLIENTBASE, serverSide=RefStringsBase.SERVERBASE)
+	@Instance(RefStringsMech.MODIDMECH)
+	public static HTMech instance;
+	
+	@SidedProxy(clientSide=RefStringsMech.CLIENTMECH, serverSide=RefStringsMech.SERVERMECH)
 	public static CommonProxy proxy;
 	
-	public static CreativeTabs tabHtech = new CreativeTabs("tabHtech") {
+	public static CreativeTabs tabHTechMech = new CreativeTabs("tabHTechMech") {
 	    @Override
 	    @SideOnly(Side.CLIENT)
 	    public Item getTabIconItem() {
@@ -38,27 +36,16 @@ public class HTBase
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-		HTItems.preInit();
-		HTBlocks.preInit();
+		
 	}
 	
     @EventHandler
-    public void init(FMLInitializationEvent event)
-    {
-    	HTItems.init();
-    	HTBlocks.init();
-    	HTCraftingManager.init();
+    public void init(FMLInitializationEvent event){
     	
     }
     
     @EventHandler
     public void postInit(FMLPostInitializationEvent event){
-    	
-    	if(event.getSide() == Side.CLIENT)
-    	{
-    		HTItems.postInit();
-    		HTBlocks.postInit();
-    	}
     	
     }
 }
