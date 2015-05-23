@@ -10,6 +10,6 @@ public class BaseMaterials {
 	public static ToolMaterial BronzeTool = EnumHelper.addToolMaterial("bronzetool", 2, 180, 5.0F, 1.5F, 17);
 	
 	//armor
-    public static ArmorMaterial BronzeArmor = EnumHelper.addArmorMaterial("bronzearmor", "bronzearmor", 10, new int[]{2, 5, 4, 2}, 12);
+    public static ArmorMaterial BronzeArmor = EnumHelper.addArmorMaterial("bronzearmor", "htech:bronzearmor", 10, new int[]{2, 5, 4, 2}, 12);
 	
 }

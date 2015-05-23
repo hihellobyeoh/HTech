@@ -8,16 +8,14 @@ import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ToolBronzeSpade extends ItemSpade {
-	
-	private final String name = "bronzespade";
-	public ToolBronzeSpade(ToolMaterial material){
+
+	public ToolBronzeSpade(String unlocalizedName, ToolMaterial material){
 		
 		super(material);
-		GameRegistry.registerItem(this, name);
-		setUnlocalizedName(RefStringsBase.MODIDBASE + "_" + name);
-		setCreativeTab(HTBase.tabHtech);
+		this.setCreativeTab(HTBase.tabHtech);
+		this.setUnlocalizedName(unlocalizedName);
 	}
-	public String getName(){
-		return name;
+	public String getName() {
+		return getUnlocalizedName();
 	}
 }

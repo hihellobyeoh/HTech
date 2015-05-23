@@ -9,15 +9,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ToolBronzeHoe extends ItemHoe {
 	
-	private final String name = "bronzehoe";
-	public ToolBronzeHoe(ToolMaterial material){
+	public ToolBronzeHoe(String unlocalizedName, ToolMaterial material){
 		
 		super(material);
-		GameRegistry.registerItem(this, name);
-		setUnlocalizedName(RefStringsBase.MODIDBASE + "_" + name);
-		setCreativeTab(HTBase.tabHtech);
+		this.setCreativeTab(HTBase.tabHtech);
+		this.setUnlocalizedName(unlocalizedName);
 	}
-	public String getName(){
-		return name;
+	public String getName() {
+		return getUnlocalizedName();
 	}
 }

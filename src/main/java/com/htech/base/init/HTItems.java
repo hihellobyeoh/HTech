@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.client.renderer.entity.RenderItem;
 
 
@@ -59,17 +60,17 @@ public class HTItems {
         bronzeIngot = new ItemBronzeIngot();
     	    
         //tools
-        bronzeSword = new ToolBronzeSword(BaseMaterials.BronzeTool);
-        bronzePickaxe = new ToolBronzePickaxe(BaseMaterials.BronzeTool);
-        bronzeSpade = new ToolBronzeSpade(BaseMaterials.BronzeTool);
-        bronzeAxe = new ToolBronzeAxe(BaseMaterials.BronzeTool);
-        bronzeHoe = new ToolBronzeHoe(BaseMaterials.BronzeTool);
-    	    
+        GameRegistry.registerItem(bronzeSword = new ToolBronzeSword(RefStringsBase.MODIDBASE + "_" + "bronzesword", BaseMaterials.BronzeTool), "bronzesword");
+        GameRegistry.registerItem(bronzePickaxe = new ToolBronzePickaxe(RefStringsBase.MODIDBASE + "_" + "bronzepickaxe", BaseMaterials.BronzeTool), "bronzepickaxe");
+        GameRegistry.registerItem(bronzeAxe = new ToolBronzeAxe(RefStringsBase.MODIDBASE + "_" + "bronzeaxe", BaseMaterials.BronzeTool), "bronzeaxe");
+        GameRegistry.registerItem(bronzeSpade = new ToolBronzeSpade(RefStringsBase.MODIDBASE + "_" + "bronzespade", BaseMaterials.BronzeTool), "bronzespade");
+        GameRegistry.registerItem(bronzeHoe = new ToolBronzeHoe(RefStringsBase.MODIDBASE + "_" + "bronzehoe", BaseMaterials.BronzeTool), "bronzehoe");
+         
         //armor
-        bronzeHelmet = new BronzeArmor(BaseMaterials.BronzeArmor, 0, "bronzehelmet");
-        bronzeChestplate = new BronzeArmor(BaseMaterials.BronzeArmor, 1, "bronzechestplate");
-        bronzeLeggings = new BronzeArmor(BaseMaterials.BronzeArmor, 2, "bronzeleggings");
-        bronzeBoots = new BronzeArmor(BaseMaterials.BronzeArmor, 3, "bronzeboots");
+        GameRegistry.registerItem(bronzeHelmet = new BronzeArmor("bronzehelmet", BaseMaterials.BronzeArmor, 1, 0), "bronzehelmet");
+        GameRegistry.registerItem(bronzeChestplate = new BronzeArmor("bronzechestplate", BaseMaterials.BronzeArmor, 1, 1), "bronzechestplate");
+        GameRegistry.registerItem(bronzeLeggings = new BronzeArmor("bronzeleggings", BaseMaterials.BronzeArmor, 2, 2), "bronzeleggings");
+        GameRegistry.registerItem(bronzeBoots = new BronzeArmor("bronzeboots", BaseMaterials.BronzeArmor, 1, 3), "bronzeboots");
     }
     
     public static void registerOreDict(){
@@ -88,11 +89,11 @@ public class HTItems {
     	renderItem.getItemModelMesher().register(bronzeIngot, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + ((ItemBronzeIngot) bronzeIngot).getName(), "inventory"));
     	
     	//tools
-    	renderItem.getItemModelMesher().register(bronzeSword, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + ((ToolBronzeSword) bronzeSword).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(bronzePickaxe, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + ((ToolBronzePickaxe) bronzePickaxe).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(bronzeSpade, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + ((ToolBronzeSpade) bronzeSpade).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(bronzeAxe, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + ((ToolBronzeAxe) bronzeAxe).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(bronzeHoe, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + ((ToolBronzeHoe) bronzeHoe).getName(), "inventory"));
+    	renderItem.getItemModelMesher().register(bronzeSword, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + "bronzesword", "inventory"));
+    	renderItem.getItemModelMesher().register(bronzePickaxe, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + "bronzepickaxe", "inventory"));
+    	renderItem.getItemModelMesher().register(bronzeSpade, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + "bronzespade", "inventory"));
+    	renderItem.getItemModelMesher().register(bronzeAxe, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + "bronzeaxe", "inventory"));
+    	renderItem.getItemModelMesher().register(bronzeHoe, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + "bronzehoe", "inventory"));
     	
     	//armor
     	renderItem.getItemModelMesher().register(bronzeHelmet, 0, new ModelResourceLocation(RefStringsBase.MODIDBASE + ":" + "bronzehelmet", "inventory"));

@@ -9,21 +9,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BronzeArmor extends ItemArmor {
-	
-	public BronzeArmor(ItemArmor.ArmorMaterial material, int armorType, String name)
-	{
-		
-		super(material, 0, armorType);
-		this.setCreativeTab(HTBase.tabHtech);
-		this.setUnlocalizedName(name);
-		GameRegistry.registerItem(this, name);
-	}
 
-	@Override
-	public String getArmorTexture(ItemStack armor, Entity entity, int slot, String type)
-	{
-		String textureName = String.format(RefStringsBase.MODIDBASE + ":textures/models/armor/%s_layer_%d%s.png",
-				this.getArmorMaterial().getName(), (slot == 2 ? 2 : 1), type == null ? "" : String.format("_%s", type));
-		return textureName;
-	}
+	    public BronzeArmor(String name, ArmorMaterial material, int renderIndex, int armorType) {
+	        super(material, renderIndex, armorType);
+	        
+	        this.setCreativeTab(HTBase.tabHtech);
+	        this.setUnlocalizedName(name);
+	    }
 }
