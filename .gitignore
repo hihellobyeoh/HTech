@@ -19,3 +19,5 @@ README.txt
 .classpath
 *vsdx
 /.metadata*
+Paulscode*
+*.launch
