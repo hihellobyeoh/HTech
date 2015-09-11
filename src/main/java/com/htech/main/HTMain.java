@@ -19,6 +19,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 @Mod(modid = RefStrings.MODID, name = RefStrings.NAME, version = RefStrings.VERSION)
 public class HTMain
 {
@@ -40,6 +41,9 @@ public class HTMain
 	public void preInit(FMLPreInitializationEvent event){
 		HTItems.preInit();
 		HTBlocks.preInit();
+		
+		
+		System.out.println("Pre Initialization Finished!");
 	}
 	
     @EventHandler
@@ -49,6 +53,8 @@ public class HTMain
     	HTBlocks.init();
     	HTCraftingManager.init();
     	
+    	
+    	System.out.println("Initialization Finished!");
     }
     
     @EventHandler
@@ -60,5 +66,8 @@ public class HTMain
     		HTBlocks.postInit();
     	}
     	
+    	
+    	System.out.println("Post Initialization Finished!");
+    	System.out.println("Welcome to HTech!");
     }
 }
